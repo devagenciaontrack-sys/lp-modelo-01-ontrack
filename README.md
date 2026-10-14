@@ -2,9 +2,9 @@
 
 Landing page modelo da **On Track** (HTML, CSS e JS puros, sem build), pronta para ser personalizada para um cliente.
 
-- **Estilo:** Creme, verde e coral; balões de conversa, letra de mão e caderno.
-- **Ideal para:** Quem quer recrutar revendedores ou vender um modelo de negócio, com simulador de margem.
-- **Seções:** Topo com vídeo estilo story · Sequência Escolha→Divulgue→Atenda→Aprenda→Repita · Canais (Instagram, WhatsApp, marketplaces) · Simulador de ganho com aviso legal · Checklist + app · Transparência · Instagram/WhatsApp · Dúvidas
+- **Estilo:** Lilás claro, roxo e laranja; balões de conversa, letra de mão e caderno.
+- **Ideal para:** Quem vende um novo negócio, franquia, programa de parceiros ou oportunidade, com simulador de margem.
+- **Seções:** Topo com vídeo estilo story · Sequência Escolha→Divulgue→Atenda→Aprenda→Repita · Canais (Instagram, WhatsApp, marketplaces) · Simulador de margem com aviso legal · Checklist + app · Transparência · Instagram/WhatsApp · Dúvidas
 - **Demonstração:** https://devagenciaontrack-sys.github.io/lp-modelo-01-ontrack/
 
 ## Como personalizar (o que o cliente precisa enviar)
