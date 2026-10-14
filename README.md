@@ -1,11 +1,11 @@
-# Modelo 03 — Revenda / oportunidade · On Track LP
+# Modelo 01 — Comece seu próprio negócio · On Track LP
 
 Landing page modelo da **On Track** (HTML, CSS e JS puros, sem build), pronta para ser personalizada para um cliente.
 
 - **Estilo:** Creme, verde e coral; balões de conversa, letra de mão e caderno.
 - **Ideal para:** Quem quer recrutar revendedores ou vender um modelo de negócio, com simulador de margem.
 - **Seções:** Topo com vídeo estilo story · Sequência Escolha→Divulgue→Atenda→Aprenda→Repita · Canais (Instagram, WhatsApp, marketplaces) · Simulador de ganho com aviso legal · Checklist + app · Transparência · Instagram/WhatsApp · Dúvidas
-- **Demonstração:** https://devagenciaontrack-sys.github.io/lp-modelo-03-ontrack/
+- **Demonstração:** https://devagenciaontrack-sys.github.io/lp-modelo-01-ontrack/
 
 ## Como personalizar (o que o cliente precisa enviar)
 
