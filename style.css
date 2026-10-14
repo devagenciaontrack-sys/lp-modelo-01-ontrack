@@ -274,3 +274,8 @@ main [id]{ scroll-margin-top:84px; }
 .story{ border-radius:34px; }
 .calc, .thread, .phone{ border-radius:30px; }
 .btn{ letter-spacing:.01em; }
+
+/* ajustes do topo: anotação fora do balão e sombra neutra no vídeo */
+.hero-scribble{ left:-118px; top:auto; bottom:14%; color:var(--green); font-size:22px; transform:rotate(-5deg); }
+.video-poster::after{ background:linear-gradient(180deg, rgba(18,16,26,.55) 0%, rgba(18,16,26,0) 22%, rgba(18,16,26,0) 72%, rgba(18,16,26,.55) 100%); }
+.story{ box-shadow:0 30px 50px -28px rgba(18,16,26,.45); }
