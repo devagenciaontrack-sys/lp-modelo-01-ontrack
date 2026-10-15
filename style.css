@@ -356,3 +356,8 @@ html{ scrollbar-color:rgba(91,63,209,.45) var(--cream); }
 
 /* anotações laranja em fundo claro: tom mais escuro para leitura */
 .hero .eyebrow, .honest-kicker{ color:#C2500C; }
+
+/* simulador: campos nunca passam do cartão */
+.calc{ min-width:0; }
+.calc-fields > *{ min-width:0; }
+.money input{ width:100%; }
