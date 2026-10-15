@@ -27,4 +27,4 @@ Landing page modelo da **On Track** (HTML, CSS e JS puros, sem build), pronta pa
 As páginas `politica-de-privacidade.html` e `termos-de-uso.html` também usam os dados da empresa.
 
 ## Briefing para o cliente
-PDF com tudo o que precisamos do cliente para montar o site: [baixar o briefing](Briefing-Modelo-01-Seu-pr'oprio-neg'ocio.pdf?raw=1)
+PDF com tudo o que precisamos do cliente para montar o site: [baixar o briefing](Briefing-Modelo-01-Seu-proprio-negocio.pdf?raw=1)
