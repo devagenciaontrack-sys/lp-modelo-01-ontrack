@@ -91,3 +91,38 @@
     });
   });
 })();
+
+// Dúvidas em forma de conversa: sem script, todas as perguntas e respostas ficam visíveis.
+(function () {
+  var chat = document.querySelector('[data-chat]');
+  if (!chat) return;
+  var corpo = chat.querySelector('.chat-corpo');
+  var bolhas = corpo.querySelectorAll('.bolha');
+  for (var i = 1; i < bolhas.length; i++) bolhas[i].remove(); // fica só a saudação
+  var ocupado = false;
+  function bolha(cls, txt) {
+    var p = document.createElement('p');
+    p.className = 'bolha ' + cls;
+    if (txt) p.textContent = txt;
+    corpo.appendChild(p);
+    corpo.scrollTop = corpo.scrollHeight;
+    return p;
+  }
+  chat.querySelectorAll('.chat-perguntas button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (ocupado) return;
+      ocupado = true;
+      b.classList.add('usada');
+      bolha('voce', b.textContent);
+      var d = bolha('ela digitando');
+      d.innerHTML = '<i></i><i></i><i></i>';
+      var espera = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 900;
+      setTimeout(function () {
+        d.remove();
+        bolha('ela', b.getAttribute('data-a'));
+        ocupado = false;
+        if (window.trackEvent) window.trackEvent('lp_faq_click', { pergunta: b.textContent });
+      }, espera);
+    });
+  });
+})();
