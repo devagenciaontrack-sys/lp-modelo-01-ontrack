@@ -389,3 +389,4 @@ html{ scrollbar-color:rgba(91,63,209,.45) var(--cream); }
 @media (min-width:900px){ .chat-perguntas{ flex-wrap:wrap; overflow:visible; } }
 /* celular: vídeo do topo e conversa mais compactos */
 @media (max-width:899px){ .hero-video{ width:min(76%, 280px); } .chat-corpo{ height:300px; } }
+@media (max-width:760px){ .topbar .logo{ min-height:44px; } }
