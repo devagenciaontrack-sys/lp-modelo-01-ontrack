@@ -341,3 +341,18 @@ html{ scrollbar-color:rgba(91,63,209,.45) var(--cream); }
 @media (max-width:480px){ .about-facts{ grid-template-columns:1fr 1fr; } }
 .about-img{ align-items:flex-start; }
 @media (max-width:899px){ .about-img{ aspect-ratio:4 / 3; } .about-cap{ font-size:19px; right:8px; } }
+
+/* rodapé: marca, CNPJ, redes e crédito da agência */
+.rod{ padding-top:52px; }
+.rod-top{ display:grid; gap:28px; padding-bottom:28px; } @media (min-width:800px){ .rod-top{ grid-template-columns:1fr auto; align-items:end; gap:48px; } }
+.rod-brand{ display:grid; gap:12px; justify-items:start; } .rod-brand p{ line-height:1.55; } .rod-brand strong{ color:var(--cream); font-weight:800; letter-spacing:.02em; }
+.rod-links{ display:flex; flex-wrap:wrap; gap:8px 22px; } .rod-links a{ color:var(--cream); font-weight:700; text-decoration:none; } .rod-links a:hover{ color:var(--coral); }
+.rod-soc{ display:flex; gap:10px; }
+.rod-soc a{ display:grid; place-items:center; width:48px; height:48px; border-radius:16px 16px 16px 4px; background:rgba(251,247,255,.1); color:var(--cream); transition:background-color .2s, color .2s, transform .2s; }
+.rod-soc a:hover{ background:var(--coral); color:var(--ink); transform:translateY(-2px); }
+.rod-soc .ic{ width:22px; height:22px; }
+.rod-bot{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px 24px; padding-top:20px; border-top:1px solid rgba(251,247,255,.14); font-size:13px; }
+.rod-credit{ color:rgba(251,247,255,.7); text-decoration:none; } .rod-credit b{ color:var(--cream); font-weight:800; transition:color .2s; } .rod-credit:hover b{ color:var(--coral); }
+
+/* anotações laranja em fundo claro: tom mais escuro para leitura */
+.hero .eyebrow, .honest-kicker{ color:#C2500C; }

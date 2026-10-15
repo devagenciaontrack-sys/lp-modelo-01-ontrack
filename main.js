@@ -10,6 +10,9 @@
   }
   window.trackEvent = track;
 
+  var ano = document.getElementById('ano');
+  if (ano) ano.textContent = new Date().getFullYear();
+
   document.addEventListener('click', function (e) {
     var el = e.target.closest('[data-track]');
     if (!el) return;
