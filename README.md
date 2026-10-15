@@ -25,3 +25,6 @@ Landing page modelo da **On Track** (HTML, CSS e JS puros, sem build), pronta pa
 | Rastreamento | Eventos `lp_*` já enviados ao dataLayer/gtag/Meta Pixel; colar as tags do cliente no `<head>` |
 
 As páginas `politica-de-privacidade.html` e `termos-de-uso.html` também usam os dados da empresa.
+
+## Briefing para o cliente
+PDF com tudo o que precisamos do cliente para montar o site: [baixar o briefing](Briefing-Modelo-01-Seu-pr'oprio-neg'ocio.pdf?raw=1)
