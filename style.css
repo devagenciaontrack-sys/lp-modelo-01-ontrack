@@ -1,4 +1,4 @@
-/* Sua Marca — conceito: conversa. Balões de mensagem, notificações e caixas; creme, verde e coral. */
+/* Sua Marca — conceito: conversa. Balões de mensagem, notificações e caixas; lilás, roxo e laranja. */
 :root{
   --cream:#FBF7FF;
   --cream-2:#EEE6FB;
@@ -8,7 +8,7 @@
   --coral-2:#F2731F;
   --ink:#1E1A2B;
   --white:#FFFFFF;
-  --muted:#5E655F;
+  --muted:#5F5A70;
   --line:rgba(30,26,43,.14);
   --title:'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --body:'Nunito Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -42,7 +42,7 @@ section{ padding-block:72px; }
 .btn-green{ background:var(--green); color:var(--white); box-shadow:0 10px 24px -12px rgba(91,63,209,.8); }
 .btn-green:hover{ background:#4A31B8; }
 .btn-coral{ background:var(--coral); color:var(--ink); box-shadow:0 10px 24px -12px rgba(255,138,61,.9); }
-.btn-coral:hover{ background:#FF8A70; }
+.btn-coral:hover{ background:var(--coral-2); }
 .btn-line{ background:transparent; color:var(--ink); box-shadow:inset 0 0 0 1.5px var(--ink); }
 .btn-line:hover{ background:var(--white); }
 .btn-cream{ background:var(--cream); color:var(--green-dk); }
@@ -159,7 +159,7 @@ h1{ font-size:clamp(44px, 7vw, 88px); font-weight:800; line-height:1.02; letter-
 .checklist .box{ width:28px; height:28px; flex:none; border-radius:9px; display:grid; place-items:center; box-shadow:inset 0 0 0 2px var(--green); color:transparent; transition:background .2s, color .2s; }
 .checklist .box .ic{ width:16px; height:16px; stroke-width:3; }
 .checklist button[aria-pressed="true"] .box{ background:var(--green); color:var(--white); }
-.checklist button[aria-pressed="true"]{ background:#EAF5EF; }
+.checklist button[aria-pressed="true"]{ background:var(--cream-2); }
 .know-phone{ position:relative; justify-self:center; padding:20px 30px; }
 .phone{ width:250px; max-width:100%; aspect-ratio:736 / 1600; border-radius:36px; border:9px solid var(--ink); overflow:hidden; background:var(--ink); box-shadow:18px 18px 0 var(--coral), 0 30px 60px -30px rgba(30,26,43,.6); transform:rotate(-3deg); }
 .phone img{ width:100%; height:100%; object-fit:cover; object-position:top; }
@@ -279,3 +279,65 @@ main [id]{ scroll-margin-top:84px; }
 .hero-scribble{ left:-118px; top:auto; bottom:14%; color:var(--green); font-size:22px; transform:rotate(-5deg); }
 .video-poster::after{ background:linear-gradient(180deg, rgba(18,16,26,.55) 0%, rgba(18,16,26,0) 22%, rgba(18,16,26,0) 72%, rgba(18,16,26,.55) 100%); }
 .story{ box-shadow:0 30px 50px -28px rgba(18,16,26,.45); }
+
+/* ---------- refinamento (v6): mesma essência, acabamento melhor ---------- */
+::selection{ background:var(--coral); color:var(--ink); }
+input{ caret-color:var(--green); }
+html{ scrollbar-color:rgba(91,63,209,.45) var(--cream); }
+
+/* balão do título abraça só as palavras */
+.bubble-word{ display:block; width:min-content; white-space:normal; box-shadow:0 18px 30px -18px rgba(242,115,31,.7); }
+@media (max-width:899px){ .bubble-word{ width:fit-content; } }
+@media (min-width:900px){ .hero-scribble{ left:-178px; } }
+@media (prefers-reduced-motion:no-preference){
+  .bubble-word{ animation:pop .7s cubic-bezier(.2,.9,.25,1.2) .15s both; transform-origin:12% 100%; }
+  @keyframes pop{ from{ opacity:0; transform:rotate(-1.5deg) scale(.86); } to{ opacity:1; transform:rotate(-1.5deg) scale(1); } }
+}
+.hero-grid{ align-items:center; }
+@media (min-width:900px){ .hero-video{ width:min(100%, 360px); } }
+
+/* sequência numa linha só no desktop */
+.loop-words li{ font-size:clamp(28px, 3.7vw, 46px); }
+.loop-words li:not(:last-child)::after{ width:clamp(30px, 3.8vw, 52px); }
+
+/* simulador: título com mais respiro */
+@media (min-width:960px){ .sim-grid{ grid-template-columns:1fr 1.1fr; } .sim h2{ max-width:11ch; } }
+.formula{ font-variant-numeric:tabular-nums; }
+
+/* checklist: rótulo do passo não quebra */
+.checklist small{ white-space:nowrap; min-width:auto; }
+@media (max-width:420px){ .checklist button{ gap:12px; padding:14px; } .checklist small{ display:none; } }
+
+/* celular: fundo laranja com sombra suave em vez do bloco duro */
+.phone{ box-shadow:0 0 0 0 transparent, 0 36px 60px -28px rgba(30,26,43,.55); }
+.know-phone::before{ content:""; position:absolute; inset:34px 14px 6px 46px; border-radius:40px; background:var(--coral); transform:rotate(4deg); z-index:-1; }
+.know-phone{ isolation:isolate; }
+
+/* FAQ e mensagens: estados de hover mais claros */
+.faq summary:hover{ color:var(--green); }
+.faq details[open]{ background:var(--cream-2); }
+.msg{ transition:transform .25s cubic-bezier(.2,.7,.2,1); }
+.msg:hover{ transform:translateY(-3px); }
+@media (prefers-reduced-motion:reduce){ .msg:hover{ transform:none; } }
+
+/* simulador sem vazar no celular */
+.sim-grid > *, .know-grid > *, .hero-grid > *{ min-width:0; }
+.formula{ max-width:100%; }
+
+/* sobre nós */
+.about{ background:var(--white); }
+.about-grid{ display:grid; gap:40px; align-items:center; }
+@media (min-width:900px){ .about-grid{ grid-template-columns:.9fr 1.1fr; gap:80px; } }
+.about-photo{ position:relative; margin:0; max-width:460px; width:100%; justify-self:center; }
+.about-img{ display:flex; align-items:flex-end; padding:18px; aspect-ratio:4 / 5; border-radius:30px 30px 30px 8px; background:linear-gradient(160deg, var(--cream-2), #D9CCF7); box-shadow:0 30px 50px -30px rgba(36,19,95,.45); transform:rotate(-1.5deg); }
+.about-img span{ font-size:14px; font-weight:700; color:rgba(36,19,95,.5); }
+.about-cap{ position:absolute; right:-6px; bottom:-18px; padding:8px 16px; border-radius:16px 16px 4px 16px; background:var(--coral); color:var(--ink); font-size:22px; transform:rotate(-3deg); }
+.about-text{ display:grid; gap:16px; }
+.about-text h2{ margin-bottom:6px; max-width:16ch; }
+.about-text p{ font-size:18px; color:var(--muted); max-width:52ch; }
+.about-facts{ display:grid; grid-template-columns:repeat(3, auto); justify-content:start; gap:12px 36px; margin:14px 0 0; padding-top:20px; border-top:1px solid var(--line); }
+.about-facts dt{ font-size:12.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--green); }
+.about-facts dd{ margin:2px 0 0; font-family:var(--title); font-weight:700; font-size:20px; letter-spacing:-.02em; }
+@media (max-width:480px){ .about-facts{ grid-template-columns:1fr 1fr; } }
+.about-img{ align-items:flex-start; }
+@media (max-width:899px){ .about-img{ aspect-ratio:4 / 3; } .about-cap{ font-size:19px; right:8px; } }

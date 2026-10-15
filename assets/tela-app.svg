@@ -1,1 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736 1600" width="736" height="1600"><rect width="736" height="1600" fill="#E9E9E6"/><g fill="none" stroke="#55585F" stroke-width="8.785714285714286" stroke-linecap="round" stroke-linejoin="round" opacity=".55" transform="translate(306.5 681.5)"><rect width="123" height="95.94" rx="9.84"/><circle cx="39.36" cy="34.440000000000005" r="11.07"/><path d="M7.38 86.1 46.74 51.66 71.33999999999999 73.8 88.56 59.04 115.61999999999999 86.1"/></g><text x="368" y="895.7" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="57" font-weight="600" fill="#55585F" opacity=".7">Print do seu app</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736 1600" width="736" height="1600" font-family="system-ui, -apple-system, Segoe UI, sans-serif">
+  <rect width="736" height="1600" fill="#FBF7FF"/>
+  <!-- topo -->
+  <rect width="736" height="430" fill="#5B3FD1"/>
+  <circle cx="640" cy="60" r="190" fill="#FF8A3D" opacity=".22"/>
+  <text x="56" y="170" font-size="34" font-weight="600" fill="#FBF7FF" opacity=".75">Olá!</text>
+  <text x="56" y="232" font-size="52" font-weight="800" fill="#FBF7FF">Sua loja</text>
+  <rect x="56" y="290" width="624" height="84" rx="42" fill="#FBF7FF"/>
+  <circle cx="110" cy="332" r="15" fill="none" stroke="#5B3FD1" stroke-width="5"/>
+  <path d="m121 343 12 12" stroke="#5B3FD1" stroke-width="5" stroke-linecap="round"/>
+  <text x="150" y="343" font-size="28" fill="#1E1A2B" opacity=".45">Buscar produtos</text>
+  <!-- atalhos -->
+  <g font-size="24" font-weight="700" fill="#1E1A2B" text-anchor="middle">
+    <rect x="56" y="476" width="136" height="136" rx="36" fill="#EEE6FB"/><rect x="218" y="476" width="136" height="136" rx="36" fill="#FFE3CF"/><rect x="382" y="476" width="136" height="136" rx="36" fill="#EEE6FB"/><rect x="544" y="476" width="136" height="136" rx="36" fill="#EEE6FB"/>
+    <circle cx="124" cy="544" r="26" fill="#5B3FD1"/><circle cx="286" cy="544" r="26" fill="#FF8A3D"/><circle cx="450" cy="544" r="26" fill="#5B3FD1"/><circle cx="612" cy="544" r="26" fill="#24135F"/>
+    <text x="124" y="652">Pedidos</text><text x="286" y="652">Ofertas</text><text x="450" y="652">Clientes</text><text x="612" y="652">Ajuda</text>
+  </g>
+  <!-- destaque -->
+  <rect x="56" y="710" width="624" height="230" rx="40" fill="#24135F"/>
+  <text x="96" y="790" font-size="30" font-weight="600" fill="#FBF7FF" opacity=".7">Novidades da semana</text>
+  <text x="96" y="852" font-size="46" font-weight="800" fill="#FBF7FF">Confira o catálogo</text>
+  <rect x="96" y="878" width="170" height="10" rx="5" fill="#FF8A3D"/>
+  <!-- produtos -->
+  <text x="56" y="1020" font-size="34" font-weight="800" fill="#1E1A2B">Mais vendidos</text>
+  <g>
+    <rect x="56" y="1052" width="300" height="300" rx="36" fill="#EEE6FB"/><rect x="380" y="1052" width="300" height="300" rx="36" fill="#FFE3CF"/>
+    <rect x="96" y="1380" width="200" height="22" rx="11" fill="#1E1A2B" opacity=".75"/><rect x="96" y="1420" width="120" height="22" rx="11" fill="#5B3FD1"/>
+    <rect x="420" y="1380" width="200" height="22" rx="11" fill="#1E1A2B" opacity=".75"/><rect x="420" y="1420" width="120" height="22" rx="11" fill="#5B3FD1"/>
+  </g>
+  <!-- barra inferior -->
+  <rect y="1490" width="736" height="110" fill="#FFFFFF"/>
+  <rect y="1490" width="736" height="2" fill="#1E1A2B" opacity=".08"/>
+  <g fill="#1E1A2B" opacity=".3"><circle cx="276" cy="1545" r="14"/><circle cx="460" cy="1545" r="14"/><circle cx="644" cy="1545" r="14"/></g>
+  <circle cx="92" cy="1545" r="14" fill="#5B3FD1"/>
+</svg>
