@@ -390,3 +390,60 @@ html{ scrollbar-color:rgba(91,63,209,.45) var(--cream); }
 /* celular: vídeo do topo e conversa mais compactos */
 @media (max-width:899px){ .hero-video{ width:min(76%, 280px); } .chat-corpo{ height:300px; } }
 @media (max-width:760px){ .topbar .logo{ min-height:44px; } }
+
+/* ───────────────────────────────────────────────
+   Ajustes de celular: sequência, app e ficha
+   ─────────────────────────────────────────────── */
+
+/* 1 · "Não precisa começar pensando grande"
+   No celular as setas quebravam no fim da linha e sobravam soltas.
+   Vira uma sequência vertical com trilho — lê melhor em tela estreita. */
+@media (max-width:899px){
+  .small-grid{ gap:14px; margin-bottom:34px; }
+  .small-text{ max-width:46ch; }
+}
+@media (max-width:700px){
+  .loop{ padding-bottom:0; }
+  .loop-words{
+    flex-direction:column; align-items:flex-start; gap:0;
+    position:relative; padding-left:30px;
+  }
+  .loop-words::before{
+    content:""; position:absolute; left:8px; top:18px; bottom:24px; width:2px;
+    border-radius:2px; background:linear-gradient(var(--coral), var(--green));
+  }
+  .loop-words li{
+    font-size:clamp(27px, 7.6vw, 36px); padding-block:7px;
+    transform:none; position:relative;
+  }
+  .loop-words li::before{
+    content:""; position:absolute; left:-30px; top:50%; translate:0 -50%;
+    width:18px; height:18px; border-radius:50%; background:var(--coral);
+    box-shadow:0 0 0 4px var(--cream);
+  }
+  .loop-words li.loop-last::before{ background:var(--green); }
+  .loop-words li:not(:last-child)::after{ display:none; }
+  .loop-note{ position:static; margin-top:16px; transform:rotate(-1.5deg); }
+}
+
+/* 2 · "Quer conhecer antes de decidir?"
+   O mockup do celular ficava estranho na vertical — some no celular
+   e o botão passa a ocupar a largura toda. */
+@media (max-width:899px){
+  .know-phone{ display:none; }
+  .know-grid{ gap:0; }
+  .know-text .btn{ width:100%; }
+}
+
+/* 3 · Ficha "Desde / Onde / Atendimento"
+   Em 2 colunas o terceiro item ficava órfão. Vira lista de linhas,
+   rótulo à esquerda e valor à direita, tudo alinhado. */
+@media (max-width:620px){
+  .about-facts{ grid-template-columns:1fr; gap:0; }
+  .about-facts > div{
+    display:flex; align-items:baseline; justify-content:space-between;
+    gap:16px; padding-block:13px; border-bottom:1px solid var(--line);
+  }
+  .about-facts > div:last-child{ border-bottom:0; padding-bottom:0; }
+  .about-facts dd{ margin:0; text-align:right; }
+}
