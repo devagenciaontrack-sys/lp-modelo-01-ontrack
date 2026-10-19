@@ -447,3 +447,24 @@ html{ scrollbar-color:rgba(91,63,209,.45) var(--cream); }
   .about-facts > div:last-child{ border-bottom:0; padding-bottom:0; }
   .about-facts dd{ margin:0; text-align:right; }
 }
+
+/* ───────────────────────────────────────────────
+   Botão de WhatsApp no topo
+   O único botão do topo sumia abaixo de 520px e a
+   pessoa ficava sem ação à mão. Entra um de
+   WhatsApp que fica visível em qualquer tela.
+   ─────────────────────────────────────────────── */
+.btn-wa{ background:#25D366; color:#0B2015; }
+.btn-wa:hover{ background:#1FBF5A; }
+.topbar .topbar-wa{ display:inline-flex; align-items:center; gap:8px; margin-left:auto;
+            white-space:nowrap; padding:10px 18px; min-height:40px;
+            font-size:13.5px; }
+.topbar-wa .ic{ width:17px; height:17px; flex:none; }
+@media (min-width:960px){ .topbar .topbar-wa{ margin-left:8px; } }
+@media (max-width:520px){
+  .topbar-in{ gap:12px; min-height:60px; }
+  .topbar .topbar-wa{ display:inline-flex; padding:9px 14px; font-size:12.5px; min-height:38px; }
+  .logo{ font-size:17px; }
+  .logo-mark{ width:27px; height:27px; }
+}
+@media (max-width:330px){ .topbar .topbar-wa span{ display:none; } .topbar .topbar-wa{ padding:9px 11px; } }
